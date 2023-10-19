@@ -1,0 +1,168 @@
+body {
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+
+    font-family: monospace;
+}
+
+main {
+    width: 70%;
+    /*
+        Primer parámetro arriba - abajo
+        Segundo parámetro izquierda - derecha
+    */
+    margin: 0 auto;
+    display: flex;
+}
+
+div#contenido-usuario {
+    width: 30%;
+}
+
+img.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 7px solid #F8BB10;
+    display: block;
+    margin: 20px auto;
+}
+
+h3 {
+    text-align: center;
+    font-size: 17px;
+    color: #fff;
+}
+
+div#contenido-informacion {
+    width: 70%;
+}
+
+ul.enlaces-redes {
+    /* Elimina los puntos de la lista */
+    list-style: none;
+
+    /* Eliminar los espacios arriba, derecha, abajo e izquiera*/
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+ul.enlaces-redes li {
+    margin-right: 8px;
+    border-radius: 50%;
+}
+
+ul.enlaces-redes li a {
+    color: #fff;
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    /* Alinea horizontalmente */
+    justify-content: center;
+
+    /* Alinea verticalmente */
+    align-items: center;
+    
+    /* 
+    Eliminar la línea del enlace 
+    que se ubica en la parte de abajo
+    */
+    text-decoration: none;
+}
+
+ul.enlaces-redes li a:hover {
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+}
+
+ul.enlaces-redes li.icono-facebook {
+    background-color: #3f51b5;
+}
+
+ul.enlaces-redes li.icono-twitter {
+    background-color: #000;
+}
+
+ul.enlaces-redes li.icono-linkedin {
+    background-color: #1565C0;
+}
+
+a.contenido-whatsapp {
+    background-color: #25d366;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 40px;
+
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+h1 {
+    /* Espacios entre líneas */
+    line-height: 41px;
+}
+
+h1 span {
+    display: block;
+}
+
+#nombres {
+    font-size: 37px;
+    color: #fff;
+}
+
+#apellidos {
+    font-size: 52px;
+    color: #F8BB10;
+}
+
+h2 {
+    color: #fff;
+    font-size: 16px;
+}
+
+p {
+    font-size: 18px;
+    color: #fff;
+    line-height: 26px;
+}
+
+
+table {
+    width: 100%;
+    /* Eliminar espacios entre celdas */
+    border-collapse: collapse;
+    color: #fff;
+    margin-bottom: 20px;
+
+    /* Todas las celdas quedan del mismo ancho */
+    table-layout: fixed;
+}
+
+table td,
+table th {
+    border: 1px solid #fff;
+}
+
+/*
+    nth-child - Permite seleccionar varios elementos
+    even - par
+    odd - impar
+*/
+table tbody tr:hover,
+table tbody tr:nth-child(odd) {
+    background-color: #cfcfcf;
+    color: #000;
+}
